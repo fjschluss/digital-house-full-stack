@@ -1,6 +1,6 @@
 # Curso de Full Stack de Digital House
 
-## [1. Diseño Web: HTML y CSS] (https://github.com/fjschluss/digital-house-full-stack/tree/023122aa8120f8d992b20d98dc8874d18227a0e5/1.%20Dise%C3%B1o%20Web%3A%20HTML%20y%20CSS)
+## 1. Diseño Web: HTML y CSS
 
 ## 2. Learning Agility
 
