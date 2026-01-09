@@ -1,23 +1,23 @@
-/* NORMALIZACIÓN: */
+/* NORMALIZACIÓN:  */
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Esto mantiene el alto y ancho a pesar de padding y border */
-    font-family: "Inconsolata", monospace;
-    list-style: none; /* Quitar los puntos y decoracion de las listas */
-    text-decoration: none; /*Esto quita el subrayado de los enlaces */
+    box-sizing: border-box; /* Esto mantiene el ancho y alto a pesar de padding y border*/
+    font-family: 'Inconsolata', monospace;
+    list-style: none; /* Quitar los puntos e decoración de las listas */
+    text-decoration: none; /* Esto quita el subrayado de los enlaces */
     color: white;
 }
 
-body {
-    background-color: black; /* ToDo: borrar cuando tengamos el fondo final */
+body{
+    background-color: black; /* TODO: borrar cuando tengamos el fondo final */
 }
 
 header {
-    position: fixed; /* Esto hace que el header se quede fijo en la parte superior */
+    position: fixed; /* Esto hace que el haader se quede fijo en la parte superior */
     right: 0;
     top: 0;
-    z-index: 100; /*Esto hace que el header se muestre por encima */
+    z-index: 100; /* Esto hace que el header se muestre por encima*/
     width: 100%;
     display: flex; /* Esto hará que los elementos se pongan en linea */
     align-items: center; /* Centra verticalmente */
@@ -32,60 +32,54 @@ header {
 }
 
 .navlist {
-    display: flex; /* Esto sirve para que los elementos en la lista UL se pongan en linea */
+    display: flex; /* Esto sirve para que los elementos de la lista UL se pongan en linea*/
 }
 
 .navlist a {
     margin-left: 60px; /* es para separar las palabras */
     font-size: 15px;
     font-weight: 600;
-    border-bottom: 2px solid transparent; /*este es un subrayado transparente */
+    border-bottom: 2px solid transparent; /* este es un subrayado transparente */
     transition: all .5s ease; /* esto es para animar todas las caracteristicas del .navlist a */
 }
 
 .navlist a:hover {
-border-bottom: 2px solid white; /* Este es un subrayado blanco que aparecerá cuando estamos encima con el mouse */
+    border-bottom: 2px solid white; /* este es un subrayado blanco que aparecerá cuando hacemos estamos encima con el mouse */
 }
 
-#menu-icon {
-    display: none; /* Esto lo pongo en none para que se vea cuando la página esté colapsada de forma horizontal */
-}
+ #menu-icon{
+    display: none;  /* lo pongo en none para que solo se vea cuando la página esté colapsada de forma horizontal */
+} 
 
-#menu-icon {
+#menu-icon{
     font-size: 35px;
-    z-index: 101; /*Esto es para que este sobre el header */
-    cursor: pointer; /* Esto es para que aparezca la manito cuando ponemos el mouse encima */
+    z-index: 101; /* para que este sobre el header */
+    cursor: pointer; /* para que aparezca la manito cuando ponemos el mouse encima */
+    display: none;
 }
 
-#menu-toggle {
-    display: none; /* Nunca quiero que se vea el checkbox */
+#menu-toggle{
+    display: none; /* nunca quiero que se vea el checkbox*/
 }
 
-#menu-icon-action {
-    display: none; /* Para que no se le pueda hacer click */
+.menu-icon-action{
+    display: none; /* para que no se le pueda hacer click*/
 }
 
-.hero {
+.hero{
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%); /* Esto es un fondo de color gradiente */
-    position: relative; /* Esto es para que sea relativo al contenedor (no se permite usar top, bottom, left y right) */
-    display: grid; /* Esto es para que el hero se pueda dividir en dos columnas */
-    grid-template-columns: 1fr 1fr; /* Estas son las dos columnas */
-    align-items: center; /* Esto es para alinear verticalmente el hero */
-    gap: 2rem; /* Esto es para que haya espacio de 2 rem entre las dos columnas */
+    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%); /* fondo de color gradiente */
+    position: relative; /* Para que sea relativo al contenedor (nos permite usar top, bottom, left y right) */
+    display: grid; /* Para que el hero se pueda dividir en dos columnas */
+    grid-template-columns: 1fr 1fr; /* las 2 columnas */
+    align-items: center; /* para alinear verticalmente el hero */
+    gap: 2rem; /* haya espacio de 2 rem entre las dos columnas */
 }
 
-section {
+section{
     padding: 0 8%;
-}
-
-.hero-text h1 {
-    font-family: "Roboto Mono", monospace;
-    font-size: 50px;
-    line-height: 1;
-    margin: 0 0 30px;
 }
 
 .hero-text h5 {
@@ -94,10 +88,17 @@ section {
     margin-bottom: 25px;
 }
 
+.hero-text h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+    line-height: 1;
+    margin: 0 0 30px;
+}
+
 .hero-text h4 {
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .hero-text p {
@@ -106,13 +107,11 @@ section {
     line-height: 1.9;
 }
 
-.hero-img img {
+.hero-img img{
     width: 400px;
     margin: 10% 0 0 10%;
     height: auto;
-    border: 1px solid #4d4d4d;
-    border-radius: 1000px;
-    transition: all 5s linear; /* Esto hace que la transcición sea lineal */
+    transition: all 5s linear; /* esto hace que la transición sea lineal */
 }
 
 .hero-img img:hover {
@@ -135,17 +134,17 @@ section {
 
 .hero-text a:hover {
     background-color: transparent;
-    border:  1px solid white;
+    border: 1px solid white;
     transform: translateX(8px);
 }
 
-.hero-text a.videos {
+.hero-text a.videos{
     background-color: transparent;
     border: 1px solid white;
-    margin-left: 20px;
+    margin-left:  20px;
 }
 
-.hero-text a.videos i {
+.hero-text a.videos i{
     vertical-align: middle;
     margin-right: 5px;
 }
@@ -153,7 +152,7 @@ section {
 .icons {
     position: absolute;
     top: 50vh;
-    padding:  0 3%;
+    padding: 0 3%;
     transform: translateY(-50%);
 }
 
@@ -164,7 +163,7 @@ section {
     transition: all 0.5s ease;
 }
 
-.icons i:hover {
+.icons i:hover{
     color: #4d4d4d;
     transform: translateY(-5px);
 }
@@ -184,27 +183,28 @@ section {
     transition: all .5s ease;
 }
 
-.scroll-down i:hover {
+.scroll-down i:hover{
     transform: translateY(-5px);
 }
 
+
 /* Aca vamos a hacer mediaqueries para que la web sea responsive */
 
-@media (max-width:992px) {
+@media (max-width:992px){
     section {
         padding: 0 3%;
         transition: .2s;
     }
 
-    .hero-text {
+    .hero-text{
         padding-top: 0;
     }
 
-    .hero-img {
+    .hero-img{
         text-align: center;
     }
 
-    .hero-img img {
+    .hero-img img{
         width: 80%;
         margin: 10% 0 0 10%;
     }
@@ -217,21 +217,22 @@ section {
         display: none;
     }
 
-    .scroll-down {
+    .scroll-down{
         display: none;
     }
 }
 
-@media (max-width: 600px) {
-    .menu-icon-action {
+@media (max-width: 768px){
+
+    .menu-icon-action{
         display: block;
     }
 
-    #menu-icon {
+    #menu-icon{
         display: block;
     }
 
-    .hero-text {
+    .hero-text{
         text-align: center;
         padding-top: 100px;
     }
@@ -242,11 +243,11 @@ section {
 
     .hero {
         height: 100%;
-        gap: 1;
+        gap: 1rem;
         grid-template-columns: 1fr;
     }
 
-    .navlist {
+    .navlist{
         position: absolute;
         top: 100%;
         right: -100%;
@@ -265,7 +266,8 @@ section {
         margin: 7px 0;
     }
 
-    #menu-toggle:checked + label.menu-icon-action + ul {
+    .navlist.open{
         right: 0;
     }
+
 }
