@@ -1,0 +1,164 @@
+/* =========================
+   RESET BÁSICO
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   COLORES ACCESIBLES
+========================= */
+
+:root {
+    --color-fondo: #f5f7fa;
+    --color-principal: #1f3a5f;   /* Azul oscuro */
+    --color-secundario: #3f6ea1; /* Azul medio */
+    --color-texto: #1a1a1a;
+    --color-gris: #6b7280;
+    --color-card: #ffffff;
+}
+
+/* =========================
+   BODY GENERAL
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    padding: 40px;
+    line-height: 1.6;
+}
+
+/* =========================
+   TITULOS
+========================= */
+
+h1 {
+    color: var(--color-principal);
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+}
+
+h2, h3 {
+    color: var(--color-principal);
+    margin-bottom: 10px;
+}
+
+/* =========================
+   LISTAS
+========================= */
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* =========================
+   TARJETAS DE BANDAS
+========================= */
+
+li {
+    background-color: var(--color-card);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   IMÁGENES
+========================= */
+
+img {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    background-color: #e3ecf6;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+/* =========================
+   DETALLE DE BANDA
+========================= */
+
+.detalle {
+    max-width: 700px;
+    background-color: var(--color-card);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.detalle p {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   LISTA DE CANCIONES
+========================= */
+
+.canciones {
+    margin-top: 15px;
+}
+
+.canciones li {
+    background: none;
+    box-shadow: none;
+    padding: 5px 0;
+}
+
+/* =========================
+   MENSAJES DE ERROR
+========================= */
+
+.error {
+    background-color: #eef2f7;
+    border-left: 6px solid var(--color-principal);
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}

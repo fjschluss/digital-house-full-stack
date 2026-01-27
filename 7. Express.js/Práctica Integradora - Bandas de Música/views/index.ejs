@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+
+    <h1>Listado de Bandas</h1>
+
+    <ul>
+      <% bandas.forEach(banda => { %>
+        <li>
+          <h3><%= banda.nombre %></h3>
+
+          <a href="/detalle/<%= banda.id %>">
+            <img src="/<%= banda.cover %>" alt="<%= banda.nombre %>">
+          </a>
+        </li>
+      <% }) %>
+    </ul>
+
+  </body>
+</html>

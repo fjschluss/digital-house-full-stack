@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    
+    <%- include('./partials/menu') %>
+    <h1>Héroes</h1>
+    <ul>
+    <% heroes.forEach(h => { %>
+        <li><%= h.nombre %></li>
+        <a href="/heroes/detalles/id/<%= h.id %>">Detalle</a> |
+        <a href="/heroes/bio/id/<%= h.id %>/ok">Biografía</a>
+    <% }) %>
+    </ul>
+
+  </body>
+</html>
