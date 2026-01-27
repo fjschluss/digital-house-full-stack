@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+
+    <div class="detalle">
+
+      <% if (error) { %>
+        <p class="error"><%= error %></p>
+      <% } else { %>
+
+        <h1><%= banda.nombre %></h1>
+
+        <img src="/<%= banda.cover %>" alt="<%= banda.nombre %>">
+
+        <p><strong>Integrantes:</strong> <%= banda.integrantes %></p>
+
+        <p>
+          <strong>Género:</strong>
+          <a href="/genero/<%= banda.genero %>"><%= banda.genero %></a>
+        </p>
+
+        <h3>Top canciones</h3>
+
+        <ul class="canciones">
+          <% banda.topCanciones.forEach(c => { %>
+            <li><%= c %></li>
+          <% }) %>
+        </ul>
+
+        <a href="<%= banda.video %>" target="_blank">🎵 Ver video</a>
+
+      <% } %>
+
+    </div>
+
+  </body>
+</html>

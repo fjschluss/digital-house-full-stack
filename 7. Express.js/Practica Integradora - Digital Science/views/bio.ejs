@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    
+    <%- include('./partials/menu') %>
+    <h2><%= heroe.nombre %></h2>
+
+    <% if (ok === "ok") { %>
+    <p><%= heroe.resenia %></p>
+    <% } else { %>
+    <p>Lamento que no desees saber más de mi :(</p>
+    <% } %>
+
+  </body>
+</html>
