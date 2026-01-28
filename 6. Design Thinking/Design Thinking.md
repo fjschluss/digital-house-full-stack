@@ -4,8 +4,6 @@
 
 ## Primeros Pasos en Design Thinking
 
-## Primeros Pasos en Design Thinking
-
 Para dar los primeros pasos en el abordaje de la metodología de Design Thinking, es fundamental comenzar hablando de innovación. Innovar no significa únicamente tener una gran idea, sino reflexionar sobre la importancia de poner a las personas en el centro del proceso.
 
 El Design Thinking nos invita a resolver problemas reales y concretos, a través de proyectos que generen valor genuino para los usuarios. A lo largo de este recorrido, aprenderemos a comprender necesidades reales, diseñar soluciones relevantes y ejecutar proyectos con impacto.
